@@ -1,0 +1,44 @@
+{{#with member}}
+<h1>Member {{memid}} - Edit</h1>
+<form method="post">
+<table>
+    {{!-- <tr>
+         <th></th> 
+        <th>Current Info</th>
+         <th>New Info</th> 
+    </tr> --}}
+    <tr>
+        <td>Surname</td>
+        {{!-- <td>{{surname}}</td> --}}
+        <td><input type="text" name="surname" value='{{surname}}'></td>
+    </tr>
+    <tr>
+        <td>Firstname</td>
+        {{!-- <td>{{firstname}}</td> --}}
+        <td><input type="text" name="firstname" value='{{firstname}}'></td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        {{!-- <td>{{address}}</td> --}}
+        <td><input type="text" name="address" value='{{address}}'></td>
+    </tr>
+    <tr>
+        <td>Zipcode</td>
+        {{!-- <td>{{zipcode}}</td> --}}
+        <td><input type="text" name="zipcode" value='{{zipcode}}'></td>
+    </tr>
+    <tr>
+        <td>Telephone</td>
+        {{!-- <td>{{telephone}}</td> --}}
+        <td><input type="text" name="telephone" value='{{telephone}}'></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><input type="submit"></td>
+    </tr>
+</table>
+
+
+</form>
+{{/with}}
