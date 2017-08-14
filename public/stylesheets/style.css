@@ -5,6 +5,18 @@ body {
   background: black;
 }
 
+table {
+  text-align: left;
+
+}
+th {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+td {
+  padding: 10px;
+}
+
 a {
   color: #00B7FF;
 }

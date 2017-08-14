@@ -1,11 +1,19 @@
-
-<h1>Johnson, Jennifer</h1>
-<p>
-Address: 1234 Street
-</p>
-<p>
-Zip Code: 5678
-</p>
-<p>
-Telephone: 12345678
-</p>
+ <h1>Club Members</h1>
+ <table>
+     <tr>
+        <th>Surname</th>
+        <th>Firstname</th>
+        <th>Address</th>
+        <th>Zipcode</th>
+        <th>Telephone</th>
+     </tr>
+ {{#each members}}
+    <tr>
+        <td>{{surname}}</td>
+        <td>{{firstname}}</td>
+        <td>{{address}}</td>
+        <td>{{zipcode}}</td>
+        <td>{{telephone}}</td>
+    </tr>
+{{/each}}
+</table>
