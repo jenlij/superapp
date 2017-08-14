@@ -1,21 +1,19 @@
- <h1>Club Members</h1>
- <table>
-     <tr>
-        <th>Member ID</th> 
+{{#with member}}
+<h1>Member {{memid}}</h1>
+<table>
+    <tr>
         <th>Surname</th>
         <th>Firstname</th>
         <th>Address</th>
         <th>Zipcode</th>
         <th>Telephone</th>
-     </tr>
- {{#each members}}
+        </tr>
     <tr>
-        <td>{{memid}}</td>
         <td>{{surname}}</td>
         <td>{{firstname}}</td>
         <td>{{address}}</td>
         <td>{{zipcode}}</td>
         <td>{{telephone}}</td>
     </tr>
-{{/each}}
 </table>
+{{/with}}
